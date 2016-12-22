@@ -1,0 +1,42 @@
+{
+  "name": "memorizer",
+  "version": "0.0.1",
+  "description": "A sipmle application for spaced repetitions.",
+  "main": "index.js",
+  "_comment": "(style-loader: 0.13.1) placed here from github.com/bendytree/style-loader to fix sourcemaps+urls",
+  "scripts": {
+    "server": "node server/devServer.js",
+    "server-watch": "nodemon --watch server --exec node -- server/devServer.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint client",
+    "start": "node server/distServer.js",
+    "clean-dist": "npm run remove-dist && mkdir dist",
+    "remove-dist": "node_modules/.bin/rimraf ./dist",
+    "buildhtml": "node server/buildHtml.js",
+    "prebuild": "npm-run-all clean-dist buildhtml",
+    "build": "node server/build.js",
+    "postbuild": "node server/distServer.js"
+  },
+  "author": "Melnyk Ivan",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "cheerio": "^0.22.0",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "node-sass": "^3.10.1",
+    "nodemon": "^1.10.2",
+    "npm": "^3.10.7",
+    "npm-run-all": "^1.8.0",
+    "sass-loader": "^4.0.2",
+    "style-loader": "0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.12.2"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

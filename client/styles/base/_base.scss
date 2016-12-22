@@ -1,0 +1,31 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative; // disable horizontal scrolling
+}
+
+body {
+    font-size: 62.5%;
+    font: {
+        size: 1.6rem;
+        family: $font-1;
+    }
+    color: $color-2;
+    background-color: $color-2;
+}
+
+a {
+    color: $color-2;
+    text-decoration: none;
+}
+
+input {
+    -webkit-appearance: none;
+}
+
+input {
+    -webkit-border-radius:0; 
+    border-radius:0;
+}
