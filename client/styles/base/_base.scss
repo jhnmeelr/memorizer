@@ -12,13 +12,22 @@ body {
         size: 1.6rem;
         family: $font-1;
     }
-    color: $color-2;
-    background-color: $color-2;
+    color: $color-1;
+    background: linear-gradient(-20deg, #1060a7 0%, #1060a7 100%);
 }
 
-a {
-    color: $color-2;
+a, a:visited, a:hover, a:focus {
+    color: $color-1;
     text-decoration: none;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
 }
 
 input {

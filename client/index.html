@@ -4,13 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="styles.css">
-    <title>Title</title>
+    <title>4000Words</title>
 </head>
 
 <body>
     <div class="root">
-        
+        <header class="header-wrap">
+            <div class="header-button-outer left">
+                <div class="header-button-inner"></div>
+            </div>
+            <h1 class="title">4000Words</h1>
+            <div class="header-button-outer right">
+                <div class="header-button-inner"></div>
+            </div>
+        </header>
+        <div class="main-wrap">
+            <div class="progress-circle-outer">
+                <div class="progress-1-radial progress-1-1000">
+                    <div class="progress-2-radial progress-2-890">
+                        <div class="progress-gap">
+                            <div class="progress-circle-inner">
+                                <div class="progress">Progress</div><br>
+                                <div class="precentage">89%</div><br>
+                                <div class="words-ratio">
+                                    <span class="color new"></span>New: 0<br>
+                                    <span class="color seen"></span>Seen: 300<br>
+                                    <span class="color learned"></span>Learned: 4000
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="/learn.html" class="learn-button">Learn</a>
+            <div class="due-today-wrap">
+                <div class="due"><div class="amount">80</div><br>Due</div>
+                <div class="new"><div class="amount">20</div><br>New</div>
+            </div>
+        </div>
+        <div class="menu-wrap">
+            <div class="menu-button active"><a href="/dashboard">Learn</a></div>
+            <div class="menu-button"><a href="/profile">Profile</a></div>
+        </div>
     </div>
     <script src="bundle.js"></script>
 </body>

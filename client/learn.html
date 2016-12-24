@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="styles.css">
+    <title>4000Words</title>
+</head>
+
+<body>
+    <div class="root">
+        <header class="header-wrap">
+            <div class="header-button-outer left">
+                <div class="header-button-inner"></div>
+            </div>
+            <h1 class="title">4000Words</h1>
+            <div class="header-button-outer right">
+                <div class="header-button-inner"></div>
+            </div>
+        </header>
+        <div class="learn-wrap">
+            <div class="thumbnail" style="background-image: url(/assets/images/thumbnail.jpg);"></div>
+            <div class="sentenses">
+                <p>When someone is _____, they may want to speak loudly or fight.</p>
+                <p><span>Example:</span> She didn’t do her homework, so her father is _____.</p>
+            </div>
+            <div class="answer">
+                <input type="text" class="input-answer" placeholder="Type here..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Type here...'">
+                <div class="button-check-answer">Check</div>
+            </div>
+        </div>
+        <div class="menu-wrap">
+            <!-- <div class="feel-button"><div class="time">1m</div>Again</div>
+            <div class="feel-button"><div class="time">10m</div>Hard</div>
+            <div class="feel-button"><div class="time">1d</div>Good</div>
+            <div class="feel-button"><div class="time">4d</div>Easy</div> -->
+            <div class="feel-button answer">
+                <div class="remaining">
+                    <span class="new">20</span> + <span class="relearn">33</span> + <span class="due">47</span>
+                </div>
+                Show Answer
+            </div>
+        </div>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+
+</html>

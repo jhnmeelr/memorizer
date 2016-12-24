@@ -1,0 +1,68 @@
+header.header-wrap {
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+    color: $color-2;
+    h1.title {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        font-size: 4vh;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .header-button-outer {
+        position: relative;
+        width: 15vh;
+        height: 100%;
+        cursor: pointer;
+        &.left {
+            position: absolute;
+            left: 0;
+            .header-button-inner {
+                left: 15%;
+            }
+        }
+        &.right {
+            position: absolute;
+            right: 0;
+            .header-button-inner {
+                right: 15%;
+            }
+        }
+    }
+    .header-button-inner {
+        position: absolute;
+        top: 70%;
+        transform: translate(0, -50%);
+        width: 5vh;
+        height: 5vh;
+        &.plus {
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 0.4vh;
+                height: 3.2vh;
+                background-color: $color-2;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 3.2vh;
+                height: 0.4vh;
+                background-color: $color-2;
+            }
+        }
+    }
+}
